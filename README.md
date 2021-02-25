@@ -10,8 +10,8 @@ In conjunction with volume mounting of the directory, this ensures that file own
 
 # Prerequisites
 
-* Docker
-* Docker-compose
+Docker ^20.10.1
+Docker-compose ^1.27.4
 
 If you need to install docker and/or docker-compose, you can use the script in this repo. From the root level, execute the following command:
 
