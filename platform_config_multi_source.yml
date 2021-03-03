@@ -16,18 +16,18 @@ agents:
 
   # Each agent identity.config file should be in the configs
   # directory and will be used to install the agent.
-#  listener:
-#    source: $VOLTTRON_ROOT/examples/ListenerAgent
-#    config: $CONFIG/listener.config
+  listener:
+    source: $VOLTTRON_ROOT/examples/ListenerAgent
+    config: $CONFIG/listener.config
 
-#  platform.driver:
-#    source: $VOLTTRON_ROOT/services/core/PlatformDriverAgent
-#    config_store:
-#      fake.csv:
-#        file: $CONFIG/fake.csv
-#        type: --csv
-#      devices/fake-campus/fake-building/fake-device:
-#        file: $CONFIG/fake.config
+  platform.driver:
+    source: $VOLTTRON_ROOT/services/core/PlatformDriverAgent
+    config_store:
+      fake.csv:
+        file: $CONFIG/fake.csv
+        type: --csv
+      devices/fake-campus/fake-building/fake-device:
+        file: $CONFIG/fake.config
 
   platform.forwardhistorian:
     source: $VOLTTRON_ROOT/services/core/ForwardHistorian

@@ -21,12 +21,12 @@ agents:
     source: $VOLTTRON_ROOT/examples/ListenerAgent
     config: $CONFIG/listener.config
 
-#  platform.driver:
-#    source: $VOLTTRON_ROOT/services/core/PlatformDriverAgent
-#    config_store:
-#      fake.csv:
-#        file: $CONFIG/fake.csv
-#        type: --csv
-#      devices/fake-campus/fake-building/fake-device:
-#        file: $CONFIG/fake.config
+  platform.driver:
+    source: $VOLTTRON_ROOT/services/core/PlatformDriverAgent
+    config_store:
+      fake.csv:
+        file: $CONFIG/fake.csv
+        type: --csv
+      devices/fake-campus/fake-building/fake-device:
+        file: $CONFIG/fake.config
 
