@@ -95,6 +95,11 @@ RUN set -eux \
 ############################################
 
 
+#r#
+## BACnet
+##
+RUN python3 -m pip install -r services/core/BACnetProxy/requirements.txt
+
 ########################################
 # The following lines should be run from any Dockerfile that
 # is inheriting from this one as this will make the volttron

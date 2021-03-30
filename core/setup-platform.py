@@ -201,6 +201,7 @@ if need_to_install:
         install_cmd.extend(["--start", "--priority", priority])
         install_cmd.extend(["--agent-start-time", "20"])
         install_cmd.append('--force')
+        install_cmd.append('--skip-requirements')
         if agent_cfg:
             install_cmd.extend(["--config", agent_cfg])
 
