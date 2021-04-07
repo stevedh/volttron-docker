@@ -6,7 +6,6 @@ from shutil import copy
 import yaml
 from time import sleep
 
-from volttron.platform.agent.known_identities import PLATFORM_WEB
 from volttron.platform import set_home, certs
 from volttron.platform.instance_setup import setup_rabbitmq_volttron
 from volttron.utils import get_hostname
@@ -72,6 +71,7 @@ if not os.path.exists(cfg_path):
                 fout.write("{}={}\n".format(key.strip(), value.strip()))
 
 if platform_cfg.get('message-bus') == 'rmq':
+    from volttron.platform.agent.known_identities import PLATFORM_WEB
     if os.getenv('SKIP_CA_CREATE_CERTIFICATION') != 'true':
         print("Creating CA Certificate...")
         crts = certs.Certs()
